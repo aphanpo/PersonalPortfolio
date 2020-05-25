@@ -77,14 +77,14 @@ a {
 
 #aboutheading {
     font-size: 3rem;
-    width: 950px;
+    width: 800px;
     margin: auto;
 }
 
 #Me {
     display: flex;
     margin: auto;
-    width: 950px;
+    width: 800px;
     margin-top: 1rem;
     font-size: 20px;
 }
