@@ -91,7 +91,7 @@ a {
 .rotate {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
 #cert {
