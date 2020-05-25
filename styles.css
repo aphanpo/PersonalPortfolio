@@ -1,85 +1,181 @@
 html {box-sizing:border-box;} *, *::before, *::after {box-sizing: inherit}
 
 body {
-    background-color: grey;
+    background-color: rgb(179, 179, 219);
 }
+
 .container {
     width: 1200px;
     margin: auto;
-    border-bottom: 1px solid black;
-
-
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
-
-@media screen and (max-width:800px) {
-    .navbar, .profile, .content {width:100%;}
-  }
 
 .navbar {
-    /* width: 1200px; */
-    height: 50px;
     display: flex;
-    margin: 0;
-    padding: 5px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: lavender;
-    border-bottom: dotted;
-}
-
-.mainsection {
-    display: flex;
-    margin: auto;
-    margin: 10px 0px;
-    justify-content: space-between;
-    /* flex-direction: column; */
-}
-
-.profile {
-    width: 400px;
-    margin-right: 10px;
-    display: flex;
-    border: 1px solid black;
-    flex-direction: column;
-    padding: 10px;
-    background-color: lavender;
-    box-shadow: 10px 10px 5px white;
-}
-
-.content {
-    width: 750px;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 10px;
-    border: 1px solid black;
-}
-
-img {
-    background-color: white;
-    padding: 2px;
-    border-radius: 5%;
-}
-
-.title {
-    font-weight: bold;
-    border-bottom: 1px dotted black;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.projects {
-    display: flex;
-    padding-bottom: 10px;
+    justify-content: flex-end;
     border-bottom: 1px solid black;
 }
 
-footer {
-    border-top: dotted;
-    margin-top: 20px;
+.navbar > p {
+    margin: 10px;    
+}
+
+.Intro {
+    margin-top: 120px;
+    margin-bottom: 0px;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid black;
+}
+
+#FullName {
+    font-size: 5rem;
+    text-align: center;
+}
+
+#Title {
+    text-align: center;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#tech {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.react {
+    color:rgb(86, 213, 250);
+}
+  
+.node {
+    color:rgb(73, 147, 59);
+}
+
+.js {
+    color:rgb(230, 195, 44);
+}
+
+.html5 {
+    color: rgb(224, 67, 34);
+}
+
+.css3 {
+    color: rgb(33, 68, 224);
+}
+
+#About, #Portfolio {
+    margin: auto; 
+    border-bottom: 1px solid black;
+    padding-bottom: 4rem;
+    margin-top: 50px;
+    
+}
+
+#aboutheading {
+    font-size: 2rem;
+    width: 800px;
+    margin: auto;
+}
+
+#Me {
     display: flex;
-    justify-content: space-between;
+    margin: auto;
+    width: 800px;
+    margin-top: 1rem;
+}
+
+#cert {
+    margin-left: 8rem;
+}
+
+#portheading {
+    font-size: 2rem;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Portfolio {
+    display: flex;
+}
+
+.projects {
+    border: 1px solid black;
+    width: 270px; 
+    margin: 10px;
+}
+
+.projtitle {
+    text-align: center;
+}
+img {
+    margin-left: 9px;
+    margin-top: 5px;
+}
+
+#pic {
+    background-color: black;;
+}
+
+#gh {
+    padding-left: 20px;
+}
+
+footer {
+    border-bottom: 1px solid black;
+}
+
+#Contact {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin: 50px;
+}
+
+#Contact > p {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.email {
+    color: white;
+}
+
+.linkedin {
+    color: white;
+    background-color: #0077B5;
+    width: 25px;
+    height: 23px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.resume {
+    color: white;
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: .5%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: black;
+    background-color: black;
+    padding: .5px;
+    border-radius: 4px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color:  rgb(100,100,100);
+    border-color: rgb(100,100,100)
 }
