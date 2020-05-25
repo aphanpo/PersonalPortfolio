@@ -91,7 +91,7 @@ a {
 .rotate {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 #cert {
@@ -123,10 +123,7 @@ a {
 #pic {
     margin-left: 9px;
     margin-top: 5px;
-}
-
-#pic {
-    background-color: black;;
+    background-color: black;
 }
 
 #gh {
