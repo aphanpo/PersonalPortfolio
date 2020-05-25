@@ -76,19 +76,20 @@ a {
 }
 
 #aboutheading {
-    font-size: 2rem;
-    width: 800px;
+    font-size: 3rem;
+    width: 950px;
     margin: auto;
 }
 
 #Me {
     display: flex;
     margin: auto;
-    width: 800px;
+    width: 950px;
     margin-top: 1rem;
+    font-size: 20px;
 }
 
-#rotate {
+#rotate, figure {
     /* -webkit-transform: rotate(180deg);
     transform: rotate(180deg); */
     border-radius: 10px;
@@ -97,11 +98,16 @@ a {
 }
 
 #cert {
-    margin-left: 8rem;
+    border-radius: 10px ;
+}
+
+figcaption {
+    font-size: 1rem;
+    text-align: center;
 }
 
 #portheading {
-    font-size: 2rem;
+    font-size: 3rem;
     width: 800px;
     margin: auto;
     text-align: center;
