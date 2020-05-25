@@ -88,6 +88,11 @@ a {
     margin-top: 1rem;
 }
 
+.rotate {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
 #cert {
     margin-left: 8rem;
 }
