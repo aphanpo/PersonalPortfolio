@@ -89,7 +89,7 @@ a {
     font-size: 20px;
 }
 
-#rotate, figure {
+#cert, #rotate{
     /* -webkit-transform: rotate(180deg);
     transform: rotate(180deg); */
     border-radius: 10px;
@@ -99,6 +99,7 @@ a {
 
 #cert {
     border-radius: 10px ;
+    margin-left: -15px;
 }
 
 figcaption {
@@ -112,16 +113,24 @@ figcaption {
     margin: auto;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#Portfolio {
+/* #Portfolio {
     display: flex;
-}
+} */
 
 .projects {
     border: 1px solid black;
+    border-radius: 10%;
     width: 270px; 
     margin: 10px;
+}
+
+.port {
+    width: 800px;
+    display: flex;
+    margin-left: 20px;
 }
 
 .projtitle {
@@ -129,10 +138,19 @@ figcaption {
 }
 
 #pic {
-    margin-left: 9px;
-    margin-top: 5px;
+    margin: 10px;
+    /* margin-top: 9px; */
     background-color: black;
+    width: 250px;
+    height: 200px;
+    border-radius: 10%;
 }
+
+/* .projlink {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+} */
 
 #gh {
     padding-left: 20px;
@@ -184,6 +202,7 @@ footer {
     background-color: black;
     padding: .5px;
     border-radius: 4px;
+    outline: none;
 
 }
 /*On Hover Color Change*/
