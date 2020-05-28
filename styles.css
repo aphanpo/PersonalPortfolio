@@ -36,18 +36,23 @@ a {
         margin: 0px;
     }
 
-    #aboutheading, #portheading {
+    /* #aboutheading, #portheading {
         width: 100%;
         font-size: 20px;
         text-align: left;
         margin: 0px;
-    }
+    } */
 
     .Intro {
         margin: 0px;
+        text-align: center;
     }
 
-    #FullName {
+    p {
+        font-size: 15px;
+    }
+
+    /* #FullName {
         font-size: 20px;
         text-align: center;
     }
@@ -55,7 +60,7 @@ a {
     #Title, #tech {
         font-size: 10px;
         text-align: center;
-    }
+    } */
 
     #Me {
         height: auto;
@@ -63,11 +68,11 @@ a {
         overflow: visible;
         /* margin: auto; */
         width: 100%;
-        font-size: 15px;
+        /* font-size: 15px; */
     }
 
     .port, .projects {
-        /* margin: auto; */
+        margin-left: 20px;
         width: 100%;
     }
 
