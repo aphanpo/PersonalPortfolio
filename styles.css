@@ -32,8 +32,7 @@ a {
     .navbar {
         width: 100%;
         height: auto;
-        overflow: visible;
-        margin: 0px;
+        overflow: hidden;
     }
 
     /* #aboutheading, #portheading {
@@ -43,42 +42,56 @@ a {
         margin: 0px;
     } */
 
-    .Intro {
-        margin: 0px;
+    div.Intro {
+        margin: auto;
         text-align: center;
+        font-size: 15px;
     }
 
-    #FullName {
-        font-size: 20px;
-        /* text-align: center; */
+    /* #FullName {
+        font-size: 10px;
+        text-align: center;
     }
 
     #Title, #tech {
         font-size: 10px;
-        /* text-align: center; */
-    }
+        text-align: center;
+    } */
 
     #About, #Portfolio {
         width: 100%;
         height: auto;
         margin: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    div #me {
+        font-size: 15px;
     }
 
     #Me {
         flex-direction: column;
         height: auto;
         flex-wrap: wrap;
-        /* margin: auto; */
-        /* font-size: 15px; */
+        margin: auto;
+        font-size: 15px; 
+    } 
+   
+    #right {
+        /* justify-content: center; */
+        margin: auto;
     }
 
-    .port, .projects {
-        margin-left: 20px;
-        width: 100%;
+    #Portfolio {
+        /* width: 800px; */
+        /* display: flex; */
+        margin: auto;
+        /* flex-wrap: wrap; */
     }
 
   }
-
+ 
 /* HOME SECTION */ 
 
 .navbar {
@@ -153,7 +166,7 @@ a {
 #Me {
     display: flex;
     margin: auto;
-    width: 800px;
+    /* width: 800px; */
     margin-top: 1rem;
     font-size: 20px;
 }
@@ -180,7 +193,7 @@ figcaption {
 
 #portheading {
     font-size: 3rem;
-    width: 800px;
+    /* width: 800px; */
     margin: auto;
     text-align: center;
     margin-top: 50px;
@@ -274,7 +287,7 @@ footer {
     bottom: 10px;
     float: right;
     right: .5%;
-    max-width: 30px;
+    max-width: 40px;
     width: 100%;
     font-size: 12px;
     border-color: black;
