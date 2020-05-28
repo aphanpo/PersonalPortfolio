@@ -66,15 +66,11 @@ a {
         flex-wrap: wrap;
     }
 
-    div #me {
-        font-size: 15px;
-    }
-
     #Me {
         flex-direction: column;
         height: auto;
         flex-wrap: wrap;
-        margin: auto;
+        /* margin: auto; */
         font-size: 15px; 
     } 
    
@@ -112,7 +108,7 @@ a {
 }
 
 #FullName {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 }
 
