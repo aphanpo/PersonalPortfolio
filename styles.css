@@ -167,7 +167,15 @@ a {
     justify-content: center;
 }
 
-#cert, #rotate{
+#rotate {
+    margin-left: 10px;
+}
+
+#adv {
+    text-align: end;
+}
+
+#rotate{
     /* -webkit-transform: rotate(180deg);
     transform: rotate(180deg); */
     border-radius: 10px;
