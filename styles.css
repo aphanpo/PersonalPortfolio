@@ -48,31 +48,29 @@ a {
     }
 
     #FullName {
-        font-size: 0.5rem;
+        font-size: 20px;
         text-align: center;
     }
 
     #Title, #tech {
-        font-size: 0.5rem;
+        font-size: 10px;
         text-align: center;
     }
 
     #Me {
         height: auto;
         flex-wrap: wrap;
-        margin: 0;
+        overflow: visible;
+        /* margin: auto; */
         width: 100%;
         font-size: 15px;
     }
 
-    .port {
-        margin: 0px;
+    .port, .projects {
+        /* margin: auto; */
         width: 100%;
     }
 
-    .projects {
-        width: 100%;
-    }
   }
 
 /* HOME SECTION */ 
