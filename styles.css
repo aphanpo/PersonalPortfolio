@@ -16,13 +16,13 @@ a {
 
 /* MOBILE RESPONSIVE */
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
       background-color: rgb(179, 179, 219);
     }
 
     .container {
-        width: 100%;
+        width: 100vw;
         margin: 0;
         flex-direction: column;
         top: auto;
@@ -75,15 +75,8 @@ a {
     } 
    
     #right {
-        /* justify-content: center; */
+        /* justify-items: center; */
         margin: auto;
-    }
-
-    #Portfolio {
-        /* width: 800px; */
-        /* display: flex; */
-        margin: auto;
-        /* flex-wrap: wrap; */
     }
 
   }
@@ -155,35 +148,34 @@ a {
 
 #aboutheading {
     font-size: 3rem;
-    width: 800px;
+    /* width: 800px; */
     margin: auto;
 }
 
-#Me {
+#About {
     display: flex;
+    flex-direction: column;
+}
+
+#Me {
+    /* display: flex;
+    flex-direction: column; */
     margin: auto;
     /* width: 800px; */
     margin-top: 1rem;
-    font-size: 20px;
+    font-size: 18px;
+    justify-content: center;
 }
 
 #cert, #rotate{
     /* -webkit-transform: rotate(180deg);
     transform: rotate(180deg); */
     border-radius: 10px;
-    margin-left: 25px;
-    margin-top: 1rem;
+    /* margin-left: 25px;
+    margin-top: 1rem;  */
 }
 
-#cert {
-    border-radius: 10px ;
-    margin-left: -15px;
-}
 
-figcaption {
-    font-size: 1rem;
-    text-align: center;
-}
 
 /* PORTFOLIO SECTION */
 
@@ -205,9 +197,8 @@ figcaption {
     border-radius: 10%;
     width: 273px; 
     margin: 10px;
-    margin-left: 15px;
-    background-color: white;
     /* margin: auto; */
+    background-color: white;
 }
 
 .projects:hover {
@@ -217,7 +208,8 @@ figcaption {
 .port {
     /* width: 800px; */
     display: flex;
-    margin: auto;
+    /* margin: 10px; */
+    justify-content: center;
     flex-wrap: wrap;
 }
 
