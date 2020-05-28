@@ -43,7 +43,7 @@ a {
     } */
 
     div.Intro {
-        margin: auto;
+        margin: 0;
         text-align: center;
         font-size: 15px;
     }
@@ -59,7 +59,7 @@ a {
     } */
 
     #About, #Portfolio {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         margin: 0;
         flex-direction: column;
