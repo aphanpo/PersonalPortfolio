@@ -48,27 +48,27 @@ a {
         text-align: center;
     }
 
-    p {
-        font-size: 15px;
-    }
-
-    /* #FullName {
+    #FullName {
         font-size: 20px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     #Title, #tech {
         font-size: 10px;
-        text-align: center;
-    } */
+        /* text-align: center; */
+    }
+
+    #About, #Portfolio {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 
     #Me {
         flex-direction: column;
         height: auto;
         flex-wrap: wrap;
-        overflow: visible;
         /* margin: auto; */
-        width: 100%;
         /* font-size: 15px; */
     }
 
