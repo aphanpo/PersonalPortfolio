@@ -63,6 +63,7 @@ a {
     } */
 
     #Me {
+        flex-direction: column;
         height: auto;
         flex-wrap: wrap;
         overflow: visible;
