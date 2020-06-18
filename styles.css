@@ -56,12 +56,12 @@ a {
         font-size: 15px;
     }
 
-    #FullName {
+    #myName {
         font-size: 15px;
         text-align: center;
     }
 
-    #Title, #tech {
+    #myTitle, #tech {
         font-size: 10px;
         text-align: center;
     }
@@ -74,7 +74,7 @@ a {
         flex-wrap: wrap;
     }
 
-    #Me {
+    #bio {
         flex-direction: column;
         height: auto;
         flex-wrap: wrap;
@@ -112,12 +112,12 @@ a {
     border-bottom: 1px solid black;
 }
 
-#FullName {
+#myName {
     font-size: 3rem;
     text-align: center;
 }
 
-#Title {
+#myTitle {
     text-align: center;
     font-style: italic;
     font-size: 2.5rem;
@@ -169,7 +169,7 @@ a {
     flex-direction: column;
 }
 
-#Me {
+#bio {
     /* display: flex;
     flex-direction: column; */
     margin: auto;
