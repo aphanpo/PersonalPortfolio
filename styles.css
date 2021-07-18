@@ -1,339 +1,177 @@
-html {box-sizing:border-box;} *, *::before, *::after {box-sizing: inherit}
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+/* Global styles
+------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
 body {
-    background-color: rgb(179, 179, 219);
+	color: #343434;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
 }
-
-:root {
-    font-size: 20px;
+img {
+	width: 150px;
 }
-
-.container {
-    width: 1200px;
-    margin: auto;
-}
-
 a {
-    text-decoration: none;
-    color: black;
+	color: #ffe66d;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2 {
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+	margin: 0;
+}
+h1 {
+	font-size: 100px;
+	line-height: 1;
+}
+h2 {
+	font-size: 45px;
 }
 
-.heart {
-    color: darkviolet; 
+.content-wrap {
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.item-details h3 {
+	margin-bottom: 0;
+}
+.item-details h3 + p {
+	font-style: italic;
+}
+.item-details h3 ~ p {
+	margin: 0;
+}
+.divider > section {
+	overflow: hidden;
+	border-bottom: 1px dashed #343434;
+	padding: 25px 0;
+}
+.divider > section:last-of-type {
+	border: none;
 }
 
-/* MOBILE RESPONSIVE */
-
-@media screen and (max-width: 600px) {
-    body {
-      background-color: rgb(179, 179, 219);
-    }
-
-    .container {
-        width: 100vw;
-        margin: 0;
-        flex-direction: column;
-        top: auto;
-        left: auto;
-    }
-
-    .navbar {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
-    /* #aboutheading, #portheading {
-        width: 100%;
-        font-size: 20px;
-        text-align: left;
-        margin: 0px;
-    } */
-
-    div.Intro {
-        margin: 0;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    #myName {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    #myTitle, #tech {
-        font-size: 10px;
-        text-align: center;
-    }
-
-    #About, #Portfolio {
-        /* width: 100%; */
-        height: auto;
-        margin: 0;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    #bio {
-        flex-direction: column;
-        height: auto;
-        flex-wrap: wrap;
-        /* margin: auto; */
-        font-size: 15px; 
-    } 
-   
-    #right {
-        /* justify-items: center; */
-        margin: auto;
-    }
-
-  }
- 
-/* HOME SECTION */ 
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid black;
+/* Profile
+  ------------------------------------*/
+header {
+	background: #2f3061;
+	color: #f7fff7;
 }
 
-.navbar > p {
-    margin: 10px;    
-}
-
-.navbar a:hover {
-    color: lightyellow;
-}
-
-.Intro {
-    margin-top: 120px;
-    margin-bottom: 0px;
-    padding-bottom: 6rem;
-    border-bottom: 1px solid black;
-}
-
-#myName {
-    font-size: 3rem;
-    text-align: center;
-}
-
-#myTitle {
-    text-align: center;
-    font-style: italic;
-    font-size: 2.5rem;
-}
-
-#tech {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.react {
-    color:rgb(86, 213, 250);
-}
-  
-.node {
-    color:rgb(73, 147, 59);
-}
-
-.js {
-    color:rgb(230, 195, 44);
-}
-
-.html5 {
-    color: rgb(224, 67, 34);
-}
-
-.css3 {
-    color: rgb(33, 68, 224);
-}
-
-/* ABOUT ME SECTION */
-
-#About, #Portfolio {
-    margin: auto; 
-    border-bottom: 1px solid black;
-    padding-bottom: 4rem;
-    margin-top: 50px;
-    
-}
-
-#aboutheading {
-    font-size: 3rem;
-    /* width: 800px; */
-    margin: auto;
-}
-
-#About {
-    display: flex;
-    flex-direction: column;
-}
-
-#bio {
-    /* display: flex;
-    flex-direction: column; */
-    margin: auto;
-    margin: 20px;
-    /* width: 800px; */
-    margin-top: 1rem;
-    font-size: 20px;
-    justify-content: center;
-}
-
-#rotate {
-    margin-left: 10px;
-    margin-top: 1rem;
-}
-
-#adv {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-#rotate{
-    /* -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); */
-    border-radius: 10px;
-    /* margin-left: 25px;
-    margin-top: 1rem;  */
-}
-
-
-
-/* PORTFOLIO SECTION */
-
-#portheading {
-    font-size: 3rem;
-    /* width: 800px; */
-    margin: auto;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
+/* Projects
+  ------------------------------------*/
 .projects {
-    border: 1px solid black;
-    border-radius: 10%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease-in; 
-    margin: 10px;
-    /* margin: auto; */
-    background-color: white;
-    display: flex;
+	background: #f7fff7;
+}
+.projects a {
+	color: #2f3061;
+}
+.projects .btn {
+	background: #2f3061;
+	color: #f7fff7;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+.projects .btn:hover {
+	background: rgba(47, 48, 97, 80%);
+}
+.project-item h3 {
+	margin-top: 0;
 }
 
-.projects:hover {
-    background-color: #CCC;
-    transform: rotateY(180deg);
+/* Work Experience
+  ------------------------------------*/
+.work-experience {
+	background: #a1c6d7;
 }
 
-.port {
-    /* width: 800px; */
-    display: flex;
-    margin: 10px;
-    /* justify-content: center;
-    flex-wrap: wrap; */
-    position: relative;
-    width: 273px;
-    height: 300px;
+/* Education
+  ------------------------------------*/
+.education {
+	background-image: url(../images/joanna-kosinska-unsplash.jpg);
+	background-position: top right;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+.education p {
+	width: 60%;
 }
 
-.front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
- 
-}
-
-.back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    text-align: center;
-    margin-top: 100px;
-    font-size: 18px;
-}
-
-
-.projtitle {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#pic {
-    margin: 10px;
-    /* margin-top: 9px; */
-    background-color: black;
-    width: 250px;
-    height: 200px;
-    border-radius: 10%;
-}
-
+/* Contact Info
+  ------------------------------------*/
 footer {
-    border-bottom: 1px solid black;
+	background: #343434;
+	color: #f7fff7;
+}
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+}
+.contact-list a {
+	padding: 5px;
+	display: inline-block;
 }
 
-#Contact {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin: 50px;
+/* Responsive
+  ------------------------------------*/
+@media screen and (min-width: 750px) {
+	header,
+	footer {
+		text-align: center;
+	}
+
+	.project-item img {
+		float: left;
+		margin-right: 20px;
+	}
+
+	.job-item {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 20px;
+	}
+
+	.contact-list {
+		display: flex;
+		justify-content: center;
+	}
+	.contact-list a {
+		padding: 15px;
+	}
 }
 
-#Contact > p {
-    margin: 5px;
-    font-size: 20px;
-}
-
-.email {
-    color: white;
-}
-
-.linkedin {
-    color: white;
-    background-color: #0077B5;
-    width: 25px;
-    height: 23px;
-    text-align: center;
-    border-radius: 10%;
-
-}
-
-.resume {
-    color: white;
-}
-
-/*Floating Back-To-Top Button*/
-#myBtn {
-    position: fixed;
-    bottom: 10px;
-    float: right;
-    right: .5%;
-    max-width: 40px;
-    width: 100%;
-    font-size: 12px;
-    border-color: black;
-    background-color: black;
-    padding: .5px;
-    border-radius: 4px;
-    outline: none;
-
-}
-/*On Hover Color Change*/
-#myBtn:hover {
-    background-color:  rgb(100,100,100);
-    border-color: rgb(100,100,100)
+@media screen and (max-width: 749px) {
+	h1 {
+		font-size: 75px;
+		line-height: 0.9;
+		margin-bottom: 20px;
+	}
+	h2 {
+		line-height: 1;
+	}
 }
